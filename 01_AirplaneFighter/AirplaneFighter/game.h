@@ -4,7 +4,7 @@
 #include <QGraphicsScene>
 #include <QGraphicsView>
 #include <QTimer>
-#include <QBrush>
+#include <QMediaPlayer>
 #include "player.h"
 #include "enemy.h"
 #include "score.h"

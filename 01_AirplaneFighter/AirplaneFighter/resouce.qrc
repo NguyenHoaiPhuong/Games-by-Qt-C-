@@ -6,4 +6,7 @@
         <file>pinkbullet.png</file>
         <file>player.png</file>
     </qresource>
+    <qresource prefix="/Sounds">
+        <file>HelloVietNam-QuynhAnh.mp3</file>
+    </qresource>
 </RCC>

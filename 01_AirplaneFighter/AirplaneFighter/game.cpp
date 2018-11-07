@@ -39,6 +39,13 @@ Game::Game(QWidget *parent)
     QTimer* timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(CreateEnemy()));
     timer->start(ENEMY_CREATE_TIME);
+
+    // Music
+    QMediaPlayer* music = new QMediaPlayer();
+    music->setMedia(QUrl("qrc:/Sounds/HelloVietNam-QuynhAnh.mp3"));
+    music->play();
+
+    show();
 }
 
 void Game::CreateEnemy()
