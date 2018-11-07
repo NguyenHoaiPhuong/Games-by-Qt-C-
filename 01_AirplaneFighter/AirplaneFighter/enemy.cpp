@@ -37,6 +37,8 @@ void Enemy::move()
 
         game->health->decreaseHealth();
         game->health->displayHealth();
+        if (game->health->getHealth() <= 0)
+            game->gameOver();
     }
 }
 
@@ -50,6 +52,8 @@ bool Enemy::checkCollidingItems()
         {
             game->health->decreaseHealth();
             game->health->displayHealth();
+            if (game->health->getHealth() <= 0)
+                game->gameOver();
 
             bRes = true;
         }

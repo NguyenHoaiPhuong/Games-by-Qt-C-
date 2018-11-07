@@ -2,8 +2,6 @@
 
 Health::Health()
 {
-    health = 3;
-
     setFont(QFont("Arial", 20));
     setDefaultTextColor(Qt::blue);
 }
@@ -11,6 +9,11 @@ Health::Health()
 int Health::getHealth()
 {
     return health;
+}
+
+void Health::setHealth(const int &h)
+{
+    health = h;
 }
 
 void Health::decreaseHealth()

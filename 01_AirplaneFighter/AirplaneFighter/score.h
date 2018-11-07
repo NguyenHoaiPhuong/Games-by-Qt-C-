@@ -11,6 +11,7 @@ public:
     Score(QGraphicsItem *parent = nullptr);
 
     int getScore();
+    void setScore(const int& c);
     void increaseScore();
     void displayScore();
 private:

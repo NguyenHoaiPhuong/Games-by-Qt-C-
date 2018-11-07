@@ -2,8 +2,6 @@
 
 Score::Score(QGraphicsItem *parent) : QGraphicsTextItem (parent)
 {
-    score = 0;
-
     setFont(QFont("Arial", 20));
     setDefaultTextColor(Qt::blue);
 }
@@ -11,6 +9,11 @@ Score::Score(QGraphicsItem *parent) : QGraphicsTextItem (parent)
 int Score::getScore()
 {
     return score;
+}
+
+void Score::setScore(const int &c)
+{
+    score = c;
 }
 
 void Score::increaseScore()

@@ -11,6 +11,7 @@ public:
     Health();
 
     int getHealth();
+    void setHealth(const int& h);
     void decreaseHealth();
     void displayHealth();
 

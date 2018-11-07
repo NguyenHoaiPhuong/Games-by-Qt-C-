@@ -4,6 +4,9 @@
 #define WINDOW_WIDTH    1200
 #define WINDOW_HEIGHT   800
 
+#define BUTTON_WIDTH    200
+#define BUTTON_HEIGHT   50
+
 #define BULLET_MOVE_TIME    50
 #define ENEMY_MOVE_TIME     50
 #define ENEMY_CREATE_TIME   2000
